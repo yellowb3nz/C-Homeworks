@@ -13,6 +13,10 @@ private:
 		{
 			return true;
 		}
+		else
+		{
+			return false;
+		}
 	}
 
 	void Area()
@@ -43,7 +47,7 @@ public:
 		}
 		else
 		{
-			std::cout << "Ошибка: Отрицательное значение длины.";
+			std::cout << "Ошибка: Отрицательное значение длины." << std::endl;
 			return 0;
 		}
 	}
