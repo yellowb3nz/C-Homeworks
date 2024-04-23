@@ -3,7 +3,8 @@
 namespace sd
 // Форматирование времени
 {
-    void FormatedTime(char string[], char newform[], size_t lenght) {
+    void FormatedTime(char string[], char newform[], size_t lenght) 
+    {
         time_t t = std::time(nullptr);
         std::strftime(string, lenght, newform, std::localtime(&t));
 
@@ -22,7 +23,8 @@ namespace sd
         int count = 0;
         std::string tmp;
 
-        while (!in.eof()) {
+        while (!in.eof()) 
+        {
             std::getline(in, tmp);
             count++;
         }
