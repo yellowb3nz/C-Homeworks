@@ -1,6 +1,6 @@
 #include "func.hpp"
 
-void main()
+int main()
 {
 	std::ofstream out("output.txt", std::ios::app);
 
@@ -11,4 +11,6 @@ void main()
 	int numberOfTheLine = sd::Lines(*"output.txt");
 
 	out << numberOfTheLine << "/// " << symbarr;
+
+	return 0;
 }
