@@ -8,7 +8,7 @@ namespace sd
 		str = nullptr;
 	}
 
-	// Конструктор ненулевой строки
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РЅРµРЅСѓР»РµРІРѕР№ СЃС‚СЂРѕРєРё
 	MyString::MyString(const char* str)
 	{
 		int lenght = strlen(str);
@@ -22,7 +22,7 @@ namespace sd
 		this->str[lenght] = '\0';
 	}
 
-	// Конструктор копирования
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
 	MyString::MyString(const MyString& other)
 	{
 		int lenght = strlen(other.str);
@@ -36,7 +36,7 @@ namespace sd
 		this->str[lenght] = '\0';
 	}
 
-	// Оператор присваивания
+	// РћРїРµСЂР°С‚РѕСЂ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ
 	MyString& MyString::operator=(const MyString& other)
 	{
 		if (this->str != nullptr)
@@ -57,13 +57,13 @@ namespace sd
 		return *this;
 	}
 
-	// Очистка динамической памяти
+	// РћС‡РёСЃС‚РєР° РґРёРЅР°РјРёС‡РµСЃРєРѕР№ РїР°РјСЏС‚Рё
 	MyString::~MyString()
 	{
 		delete[] this->str;
 	}
 	
-	// Вывод
+	// Р’С‹РІРѕРґ
 	void MyString::Print()
 	{
 		std::cout << str << std::endl;
