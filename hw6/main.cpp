@@ -32,7 +32,8 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-        
+
+        //управл.
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
         {
             spriteUFOTexture.move(0.0f, -0.5f);
